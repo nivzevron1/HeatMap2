@@ -1,0 +1,31 @@
+﻿body
+{
+    text-align:center;
+}
+
+.Input {
+    background: white;
+    color: black;
+    margin: 10px;
+    border: 2px solid #e7e7e7;
+    height:40px;
+}
+
+.buttonLogin {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+}
+.buttonCrateAccount {background-color:coral; padding: 10px 50px;}
+
+
+
+
