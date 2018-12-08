@@ -10,14 +10,7 @@ public partial class System_SignIn : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
-        {
-            TxtFName.Text = "";
-            TxtLName.Text = "";
-            TxtEmail.Text = "";
-            TxtPass.Text = "";
-            TxtRepeatPass.Text = "";
-        }
+
     }
 
     SqlConnection con = new SqlConnection(@"Data Source=קוקו\SQLEXPRESS;Initial Catalog=HeatMap;Integrated Security=True");// database חיבור ל 
@@ -33,5 +26,11 @@ public partial class System_SignIn : System.Web.UI.Page
         adapter.InsertCommand = new SqlCommand(sql, con);
         adapter.InsertCommand.ExecuteNonQuery();
         con.Close();
+
+        TxtFName.Text = "";
+        TxtLName.Text = "";
+        TxtEmail.Text = "";
+        TxtPass.Text = "";
+        TxtRepeatPass.Text = "";
     }
 }
